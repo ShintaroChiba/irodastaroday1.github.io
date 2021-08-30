@@ -5,7 +5,7 @@ html {
 }
 body {
   color: #383e45;
-  font-size: 0.9rem;
+  font-size: 0.9rem;/* remは入れ子親に比べた親の率 */
 }
 a {
   text-decoration: none;
@@ -63,7 +63,9 @@ li {
 }
 #header li a:hover {
   opacity: 0.7;
-}
+} 
+
+
 
 /*-------------------------------------------
 Mainvisual
@@ -75,8 +77,10 @@ Mainvisual
   width: 100%;
   max-width: 1920px;
   height: 600px;
-  object-fit: cover;
+  object-fit: cover;/* https://dekiru.net/article/13272/ */
+
 }
+
 
 /*-------------------------------------------
 About
@@ -85,6 +89,7 @@ About
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 #about img {
   width: 100px;
@@ -97,15 +102,16 @@ About
 }
 
 /*-------------------------------------------
-Bicycle
+travel
 -------------------------------------------*/
-#bicycle ul {
+#travel ul {
   display: flex;
   justify-content: space-between;
 }
-#bicycle li {
+#travel li {
   width: 32%;
 }
+
 
 /*-------------------------------------------
 footer
@@ -139,12 +145,12 @@ SP
   }
 
   /*-------------------------------------------
-  Bicycle
+  travel
   -------------------------------------------*/
-  #bicycle ul {
+  #travel ul {
     flex-direction: column;
   }
-  #bicycle li {
+  #travel li {
     width: 100%;
     margin-bottom: 30px;
   }
